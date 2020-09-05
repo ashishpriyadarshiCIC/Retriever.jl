@@ -265,4 +265,18 @@ function install_xml(dataset; table_name::String="{db}_{table}.xml",
 
 end
 
+"""
+```julia
+    install_hdf5(dataset; table_name::String="", compile::Bool=false, data_dir=pwd(),
+            debug::Bool=false, use_cache::Bool=true)
+```
+
+Install Retriever scripts in xml format.
+"""
+function install_hdf5(dataset; table_name::String="{db}_{table}.h5",
+                data_dir=pwd(), debug::Bool=false, use_cache::Bool=true)
+    rt.install_hdf5(dataset, table_name, data_dir, debug, use_cache)
+
+end
+
 end # module

@@ -48,6 +48,8 @@ json_opt = Dict("engine" =>  "json",
                 "table_name" => "{db}_{table}.json")
 xml_opt = Dict("engine" =>  "xml",
                 "table_name" => "{db}_{table}.xml")
+hdf5_opt = Dict("engine" =>  "hdf5",
+                "table_name" => "{db}_{table}.h5")
 
 function setup()
     # result
